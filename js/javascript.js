@@ -1,6 +1,6 @@
 $('.testimonials_items_main').slick({
   dots:false,
-  infinite:true,
+  infinite:false,
   speed: 300,
   autoplay:true,
   autoplayspeed:2000,

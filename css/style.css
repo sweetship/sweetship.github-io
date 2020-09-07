@@ -9,7 +9,6 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .mt-20 {
     margin-top: 20px;
 }
@@ -215,7 +214,7 @@ a {
 /*** testimonial css ***/
 
 .testimonial {
-    background-image: linear-gradient(rgba(92, 7, 250, 0.5), rgba(9, 7, 250, 0.5)), url(../1.htt.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../1.htt.jpg);
     background-attachment: fixed;
 }
 
@@ -272,7 +271,176 @@ a {
     color: #ccc;
     font-size: 14px;
 }
+/***blog section css***/
+.blog{
+    border: 1px solid #fafafa;
+    transition: all 0.3s;
+}
 
+.blog .blog-item .part-img{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.blog .blog-item .part_img img{
+    transition: all 0.3s;
+}
+
+.blog .blog-item:hover .part_img img{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.blog .blog-item .part_img .post-info-category{
+    position:absolute fixed;
+    left:0;
+    bottom:0;
+}
+
+.blog .blog-item .part_img .post-info-category a{
+    background: #1957f3;
+    padding: 7px 19px;
+    color: #fff;
+}
+
+.blog .blog-item .content{
+    padding: 20px;
+}
+
+.blog .blog-item .content .title{
+    margin-bottom: 16px;
+}
+
+.blog .blog-item .content .title h4{
+    font-size: 16px;
+}
+
+.blog .blog-item .content .title h4 a{
+    color: #000;
+}
+
+.blog .blog-item .content .title .meta span{
+    color:rgb(31, 5, 5);
+    font-size: 15px;
+}
+
+.blog .blog-item .content .title .meta span p{
+    font-size: 13px;
+}
+
+.blog .blog-item .content .author{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.blog .blog-item .content .author .author-img{
+    width: 35px;
+    height: 35px;
+    border: 2px solid #1957f3;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.blog .blog-item .content .author .author-img img{
+    border-radius: 50%;
+}
+
+.blog .blog-item .content .author .text h5{
+    font-size: 13px;
+    font-weight:800;
+    margin: 0;
+}
+
+.blog .blog-item .content .author .text h5 a{
+    color:#333;
+}
+.work{
+background-color: whitesmoke;
+    background-attachment: fixed;
+}    
+
+/**** Message section css***/
+
+.Message{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../message.jpg);
+    background-attachment: fixed;
+}
+
+.Message .section_title h3{
+    color: #fff;
+}
+
+.Message .part-info{
+    background: linear-gradient(to right, transparent, rgba(200, 200, 200, 0.1), transparent);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.Message .info-block{
+    border-right: 1px solid #fff;
+}
+
+.Message .part-info .info-block .icon{
+    margin-bottom: 15px;
+}
+
+.Message .part-info .info-block .icon i{
+    display: inline-block;
+    color: #fff;
+    font-size: 38px;
+}
+
+.Message .part-info .info-block h5{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Message .part-info .info-block p{
+    color: #fff;
+    opacity: 0.9;
+}
+
+.Message .part-info .col-md-4:last-child .info-block{
+    border-right: 0;
+}
+
+.Message .Message-form{
+    background: linear-gradient(to right, transparent, rgba(200, 200, 200, 0.1), transparent);
+    padding: 30px;
+}
+
+.Message .Message-form input,
+.Message .Message-form textarea{
+    color: #fff;
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 0;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.28);
+    margin-bottom: 15px;
+    font-size: 12px;
+    transition: 0.3s all;
+}
+
+.Message .Message-form input::placeholder,
+.Message .Message-form textarea::placeholder{
+    color: #fff;
+}
+
+.Message .Message-form input:focus,
+.Message .Message-form textarea:focus{
+    border: 1px solid#fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.Message .Message-form textarea{
+    height: 60px;
+}
 .btn:hover {
     box-shadow: inset 12em 0 0 0 #fff;
     color: blue;
